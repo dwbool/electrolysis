@@ -1,0 +1,360 @@
+object fmChart: TfmChart
+  Left = 455
+  Height = 842
+  Top = 199
+  Width = 477
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Cписок графиков'
+  ClientHeight = 842
+  ClientWidth = 477
+  DesignTimePPI = 120
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object m: TMemo
+    Left = 480
+    Height = 400
+    Top = 400
+    Width = 1700
+    Lines.Strings = (
+      'm'
+    )
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 900
+    Height = 61
+    Top = 8
+    Width = 120
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object dpFrom: TDateTimePicker
+    Left = 1030
+    Height = 28
+    Top = 10
+    Width = 105
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 2
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 45439
+    Time = 0.706283402774716
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object dpTo: TDateTimePicker
+    Left = 1030
+    Height = 28
+    Top = 40
+    Width = 105
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 3
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 45439
+    Time = 0.706454027778818
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object dpFromTime: TDateTimePicker
+    Left = 1170
+    Height = 28
+    Top = 12
+    Width = 81
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 4
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkTime
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 45440
+    Time = 0.548978449071001
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object dpToTime: TDateTimePicker
+    Left = 1170
+    Height = 28
+    Top = 40
+    Width = 81
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 5
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkTime
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 45440
+    Time = 0.99998842592322
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object Button2: TButton
+    Left = 1280
+    Height = 31
+    Top = 26
+    Width = 94
+    Caption = 'Button2'
+    TabOrder = 6
+    OnClick = Button2Click
+  end
+  object im: TImage
+    Left = 485
+    Height = 312
+    Top = 79
+    Width = 785
+    OnMouseLeave = imMouseLeave
+  end
+  object Button3: TButton
+    Left = 1280
+    Height = 31
+    Top = 90
+    Width = 191
+    Caption = 'Button3'
+    TabOrder = 7
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 1400
+    Height = 31
+    Top = 21
+    Width = 94
+    Caption = 'Button4'
+    TabOrder = 8
+    OnClick = Button4Click
+  end
+  object Label1: TLabel
+    Left = 2060
+    Height = 20
+    Top = 22
+    Width = 44
+    Caption = 'Label1'
+  end
+  object Button5: TButton
+    Left = 1314
+    Height = 31
+    Top = 150
+    Width = 94
+    Caption = 'Button5'
+    TabOrder = 9
+    OnClick = Button5Click
+  end
+  object chCur: TCheckBox
+    Left = 1578
+    Height = 24
+    Top = 29
+    Width = 58
+    Caption = 'chCur'
+    TabOrder = 10
+  end
+  object btChartsPrepare: TButton
+    Left = 1746
+    Height = 31
+    Top = 20
+    Width = 174
+    Caption = 'btChartsPrepare'
+    TabOrder = 11
+    OnClick = btChartsPrepareClick
+  end
+  object im1: TImage
+    Left = 1490
+    Height = 312
+    Top = 79
+    Width = 685
+    OnMouseLeave = imMouseLeave
+  end
+  object btStep1: TButton
+    Left = 490
+    Height = 31
+    Top = 8
+    Width = 94
+    Caption = 'step 1'
+    TabOrder = 12
+    OnClick = btStep1Click
+  end
+  object btStep2: TButton
+    Left = 490
+    Height = 31
+    Top = 35
+    Width = 94
+    Caption = 'step 2'
+    TabOrder = 13
+    OnClick = btStep2Click
+  end
+  object Button8: TButton
+    Left = 1328
+    Height = 31
+    Top = 252
+    Width = 94
+    Caption = 'Button8'
+    TabOrder = 14
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 1340
+    Height = 31
+    Top = 290
+    Width = 94
+    Caption = 'Button9'
+    TabOrder = 15
+    OnClick = Button9Click
+  end
+  object Button10: TButton
+    Left = 1340
+    Height = 31
+    Top = 320
+    Width = 94
+    Caption = 'Button10'
+    TabOrder = 16
+    OnClick = Button10Click
+  end
+  object btStep3: TButton
+    Left = 590
+    Height = 31
+    Top = 10
+    Width = 130
+    Caption = 'step 1.5'
+    TabOrder = 17
+    OnClick = btStep1_5click
+  end
+  object Button6: TButton
+    Left = 1340
+    Height = 31
+    Top = 360
+    Width = 94
+    Caption = 'Button6'
+    TabOrder = 18
+    OnClick = Button6Click
+  end
+  object btStep1_7: TButton
+    Left = 590
+    Height = 31
+    Top = 38
+    Width = 130
+    Caption = 'btStep1_7'
+    TabOrder = 19
+    OnClick = btStep1_7Click
+  end
+  object clbCharts: TCheckListBox
+    Left = 10
+    Height = 671
+    Top = 60
+    Width = 460
+    ItemHeight = 0
+    TabOrder = 20
+    OnClick = clbChartsClick
+    OnMouseUp = clbChartsMouseUp
+  end
+  object btApply: TButton
+    Left = 50
+    Height = 50
+    Top = 750
+    Width = 150
+    Caption = 'Применить'
+    Default = True
+    TabOrder = 21
+    OnClick = btApplyClick
+  end
+  object btClose: TButton
+    Left = 250
+    Height = 51
+    Top = 750
+    Width = 164
+    Cancel = True
+    Caption = 'Закрыть'
+    TabOrder = 22
+    OnClick = btCloseClick
+  end
+  object shColor: TShape
+    Left = 220
+    Height = 30
+    Top = 14
+    Width = 181
+    OnChangeBounds = shColorChangeBounds
+    OnMouseUp = shColorMouseUp
+  end
+  object Label2: TLabel
+    Left = 20
+    Height = 20
+    Top = 18
+    Width = 140
+    Caption = 'Цвет по умолчанию'
+  end
+  object Label3: TLabel
+    Left = 650
+    Height = 20
+    Top = 810
+    Width = 44
+    Caption = 'Label3'
+  end
+  object Label4: TLabel
+    Left = 510
+    Height = 20
+    Top = 810
+    Width = 44
+    Caption = 'Label4'
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 1110
+    Top = 20
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 420
+    Top = 10
+  end
+end

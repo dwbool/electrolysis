@@ -1,0 +1,78 @@
+object fmChangePassw: TfmChangePassw
+  Left = 446
+  Height = 280
+  Top = 172
+  Width = 529
+  Caption = 'Смена пароля'
+  ClientHeight = 280
+  ClientWidth = 529
+  LCLVersion = '3.2.0.0'
+  object Button1: TButton
+    Left = 104
+    Height = 37
+    Top = 208
+    Width = 121
+    Caption = 'Поменять'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 280
+    Height = 37
+    Top = 208
+    Width = 128
+    Cancel = True
+    Caption = 'Отмена'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 224
+    Height = 34
+    Top = 40
+    Width = 218
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 224
+    Height = 34
+    Top = 88
+    Width = 216
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 224
+    Height = 34
+    Top = 136
+    Width = 216
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 17
+    Top = 48
+    Width = 107
+    Caption = 'Старый пароль'
+  end
+  object Label2: TLabel
+    Left = 41
+    Height = 17
+    Top = 96
+    Width = 101
+    Caption = 'Новый пароль'
+  end
+  object Label3: TLabel
+    Left = 41
+    Height = 17
+    Top = 144
+    Width = 154
+    Caption = 'Новый пароль повтор'
+  end
+end

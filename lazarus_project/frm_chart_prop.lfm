@@ -1,0 +1,165 @@
+object fmChartProp: TfmChartProp
+  Left = 427
+  Height = 411
+  Top = 268
+  Width = 982
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'fmChartProp'
+  ClientHeight = 411
+  ClientWidth = 982
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object cbChartType: TComboBox
+    Left = 608
+    Height = 29
+    Top = 62
+    Width = 196
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Линия'
+      'Гистограмма'
+    )
+    Style = csDropDownList
+    TabOrder = 0
+    Text = 'Линия'
+    OnChange = cbChartTypeChange
+  end
+  object Label1: TLabel
+    Left = 444
+    Height = 17
+    Top = 70
+    Width = 86
+    Caption = 'Тип графика'
+  end
+  object Button1: TButton
+    Left = 578
+    Height = 40
+    Top = 336
+    Width = 163
+    Caption = 'Выход'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object clbCharts: TCheckListBox
+    Left = 24
+    Height = 320
+    Top = 56
+    Width = 368
+    ItemHeight = 0
+    TabOrder = 2
+    TopIndex = -1
+    OnClick = clbChartsClick
+    OnClickCheck = clbChartsClickCheck
+  end
+  object Label2: TLabel
+    Left = 28
+    Height = 17
+    Top = 24
+    Width = 173
+    Caption = 'Линии графиков на поле'
+  end
+  object Label3: TLabel
+    Left = 448
+    Height = 17
+    Top = 120
+    Width = 96
+    Caption = 'Цвет графика'
+  end
+  object shColor: TShape
+    Left = 611
+    Height = 28
+    Top = 114
+    Width = 193
+    OnChangeBounds = shColorChangeBounds
+    OnMouseUp = shColorMouseUp
+  end
+  object Label4: TLabel
+    Left = 448
+    Height = 17
+    Top = 168
+    Width = 63
+    Caption = 'Толщина'
+  end
+  object seWidth: TSpinEdit
+    Left = 611
+    Height = 34
+    Top = 160
+    Width = 130
+    MaxValue = 20
+    MinValue = 1
+    OnChange = seWidthChange
+    TabOrder = 3
+    Value = 10
+  end
+  object Label5: TLabel
+    Left = 448
+    Height = 17
+    Top = 216
+    Width = 140
+    Caption = 'Порядок отрисовки'
+  end
+  object seOrder: TComboBox
+    Left = 611
+    Height = 29
+    Top = 208
+    Width = 124
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+    )
+    Style = csDropDownList
+    TabOrder = 4
+    Text = '1'
+    OnChange = seOrderChange
+  end
+  object Label6: TLabel
+    Left = 448
+    Height = 17
+    Top = 264
+    Width = 501
+    Caption = 'Линии с большим порядком отрисовываются поверх линий с меньшим'
+  end
+  object btApply: TButton
+    Left = 784
+    Height = 41
+    Top = 336
+    Width = 136
+    Caption = 'Применить'
+    TabOrder = 5
+    OnClick = btApplyClick
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 816
+    Top = 117
+  end
+end

@@ -1,0 +1,222 @@
+object fmRS485: TfmRS485
+  Left = 502
+  Height = 456
+  Top = 252
+  Width = 967
+  BorderIcons = [biMaximize]
+  Caption = 'Настройки интерфейса RS485'
+  ClientHeight = 456
+  ClientWidth = 967
+  Constraints.MinHeight = 200
+  Constraints.MinWidth = 700
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object m: TMemo
+    Left = 0
+    Height = 254
+    Top = 176
+    Width = 967
+    Align = alClient
+    DragMode = dmAutomatic
+    Lines.Strings = (
+      '08:43:27 < 57 bytes > 01,01,33,03,58,00,00,00,06,01,03,2B,22,7B,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,1E,0D,0A,'
+      '08:43:28 < 31 bytes > 01,00,19,09,4F,00,00,00,07,01,01,11,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4A,0D,0A,'
+      '08:43:29 < 57 bytes > 01,01,33,03,58,00,00,00,06,01,03,2B,22,7B,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,1E,0D,0A,'
+      '08:43:30 < 31 bytes > 01,00,19,09,4F,00,00,00,07,01,01,11,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4A,0D,0A,'
+      '08:43:31 < 57 bytes > 01,01,33,03,58,00,00,00,06,01,03,2B,22,7B,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,1E,0D,0A,'
+      '08:43:32 < 31 bytes > 01,00,19,09,4F,00,00,00,07,01,01,11,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4A,0D,0A,'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+    WantReturns = False
+    WordWrap = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 176
+    Top = 0
+    Width = 967
+    Align = alTop
+    Caption = ' '
+    ClientHeight = 176
+    ClientWidth = 967
+    TabOrder = 1
+    object Button1: TButton
+      Left = 832
+      Height = 28
+      Top = 13
+      Width = 28
+      Caption = 'way 1 read'
+      TabOrder = 0
+      Visible = False
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 704
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Button2'
+      TabOrder = 1
+      Visible = False
+      OnClick = Button2Click
+    end
+    object btListPorts: TButton
+      Left = 432
+      Height = 25
+      Top = 72
+      Width = 240
+      Caption = 'Обновить список портов'
+      TabOrder = 2
+      OnClick = btListPortsClick
+    end
+    object btPortOpen: TButton
+      Left = 432
+      Height = 25
+      Top = 8
+      Width = 240
+      Caption = 'Применить / Открыть порт'
+      Default = True
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btPortOpenClick
+    end
+    object cbPorts: TComboBox
+      Left = 160
+      Height = 33
+      Top = 8
+      Width = 184
+      ItemHeight = 0
+      Style = csDropDownList
+      TabOrder = 4
+      OnChange = cbPortsChange
+    end
+    object Label1: TLabel
+      Left = 43
+      Height = 17
+      Top = 16
+      Width = 30
+      Caption = 'Port'
+    end
+    object Label2: TLabel
+      Left = 43
+      Height = 17
+      Top = 56
+      Width = 62
+      Caption = 'Baudrate'
+    end
+    object cbBaud: TComboBox
+      Left = 160
+      Height = 29
+      Top = 48
+      Width = 176
+      ItemHeight = 0
+      ItemIndex = 4
+      Items.Strings = (
+        '1200'
+        '2400'
+        '4800'
+        '9600'
+        '19200'
+        '38400'
+        '57600'
+        '115200       '
+      )
+      Style = csDropDownList
+      TabOrder = 5
+      Text = '19200'
+      OnChange = cbBaudChange
+    end
+    object btPortClose: TButton
+      Left = 432
+      Height = 25
+      Top = 40
+      Width = 240
+      Caption = 'Закрыть порт'
+      TabOrder = 6
+      OnClick = btPortCloseClick
+    end
+    object chPrintCons: TCheckBox
+      Left = 40
+      Height = 23
+      Top = 96
+      Width = 344
+      Caption = 'Показывать принимаемые данные в консоли'
+      Checked = True
+      State = cbChecked
+      TabOrder = 7
+    end
+    object btClear: TButton
+      Left = 432
+      Height = 25
+      Top = 104
+      Width = 240
+      Caption = 'Очистить консоль'
+      TabOrder = 8
+      OnClick = btClearClick
+    end
+    object chHex: TCheckBox
+      Left = 40
+      Height = 23
+      Top = 128
+      Width = 349
+      Caption = 'Отображать в шестнадцатеричном виде (Hex)'
+      Checked = True
+      State = cbChecked
+      TabOrder = 9
+    end
+    object Button3: TButton
+      Left = 432
+      Height = 25
+      Top = 136
+      Width = 235
+      Caption = 'Выход'
+      TabOrder = 10
+      OnClick = Button3Click
+    end
+    object lbLastTime: TLabel
+      Left = 880
+      Height = 17
+      Top = -1
+      Width = 53
+      Caption = '--:--           '
+    end
+    object Label3: TLabel
+      Left = 704
+      Height = 17
+      Top = 102
+      Width = 190
+      Caption = 'Время последнего приема:'
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 26
+    Top = 430
+    Width = 967
+    Align = alBottom
+    ClientHeight = 26
+    ClientWidth = 967
+    TabOrder = 2
+    object Label4: TLabel
+      Left = 360
+      Height = 17
+      Top = 0
+      Width = 70
+      Caption = '^^                  '
+    end
+  end
+  object RS: TRS232Port
+    Device = '/dev/ttyUSB0'
+    BaudRate = br019200
+    OnAfterClose = RSAfterClose
+    OnReadingProcess = RSReadingProcess
+    Left = 148
+    Top = 36
+  end
+end

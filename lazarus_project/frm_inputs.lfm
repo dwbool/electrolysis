@@ -1,0 +1,8 @@
+object fmInputs: TfmInputs
+  Left = 731
+  Height = 886
+  Top = 83
+  Width = 1026
+  Caption = 'fmInputs'
+  LCLVersion = '3.2.0.0'
+end

@@ -1,0 +1,57 @@
+object fmGraph: TfmGraph
+  Left = 874
+  Height = 1055
+  Top = 50
+  Width = 1074
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'Графики'
+  ClientHeight = 899
+  ClientWidth = 1074
+  DesignTimePPI = 120
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnMouseUp = FormMouseUp
+  OnResize = FormResize
+  LCLVersion = '3.4.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 1074
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 1074
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Left = 20
+      Height = 28
+      Top = 10
+      Width = 220
+      Caption = 'Список графиков'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 260
+      Height = 28
+      Top = 11
+      Width = 159
+      Caption = 'Выход'
+      OnClick = SpeedButton2Click
+    end
+  end
+  object panCharts: TPanel
+    Left = 0
+    Height = 849
+    Top = 50
+    Width = 1074
+    Align = alClient
+    Caption = 'Обновление данных...'
+    TabOrder = 1
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 900
+    Top = 10
+  end
+end

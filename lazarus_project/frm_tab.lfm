@@ -1,0 +1,37 @@
+object Form2: TForm2
+  Left = 351
+  Height = 622
+  Top = 260
+  Width = 1281
+  Caption = 'Form2'
+  ClientHeight = 622
+  ClientWidth = 1281
+  LCLVersion = '3.2.0.0'
+  object btRequest: TButton
+    Left = 32
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'btRequest'
+    TabOrder = 0
+    OnClick = btRequestClick
+  end
+  object m: TMemo
+    Left = 60
+    Height = 190
+    Top = 291
+    Width = 803
+    Lines.Strings = (
+      'm'
+    )
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 208
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'Button2'
+    TabOrder = 2
+  end
+end

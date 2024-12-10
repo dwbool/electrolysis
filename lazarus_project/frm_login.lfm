@@ -1,0 +1,65 @@
+object fmLogin: TfmLogin
+  Left = 711
+  Height = 255
+  Top = 354
+  Width = 427
+  Caption = 'Login'
+  ClientHeight = 255
+  ClientWidth = 427
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object cbName: TComboBox
+    Left = 122
+    Height = 33
+    Top = 40
+    Width = 246
+    ItemHeight = 0
+    Style = csDropDownList
+    TabOrder = 0
+    OnChange = cbNameChange
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 17
+    Top = 48
+    Width = 31
+    Caption = 'User'
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 17
+    Top = 104
+    Width = 66
+    Caption = 'Password'
+  end
+  object Edit1: TEdit
+    Left = 122
+    Height = 34
+    Top = 96
+    Width = 240
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 80
+    Height = 37
+    Top = 176
+    Width = 110
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 230
+    Height = 37
+    Top = 176
+    Width = 112
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+end

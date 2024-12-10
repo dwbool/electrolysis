@@ -1,0 +1,1179 @@
+object fmSettings: TfmSettings
+  Left = 347
+  Height = 876
+  Top = 94
+  Width = 1288
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'Уставки'
+  ClientHeight = 876
+  ClientWidth = 1288
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Label22: TLabel
+    Tag = 814
+    Left = 31
+    Height = 17
+    Top = 60
+    Width = 267
+    Caption = 'Концентрация кислорода в водороде'
+  end
+  object Label23: TLabel
+    Tag = 815
+    Left = 31
+    Height = 17
+    Top = 92
+    Width = 267
+    Caption = 'Концентрация водорода в кислороде'
+  end
+  object Label24: TLabel
+    Tag = 816
+    Left = 31
+    Height = 17
+    Top = 124
+    Width = 351
+    Caption = 'Давление водорода в регуляторах-промывателях'
+  end
+  object Label25: TLabel
+    Tag = 817
+    Left = 30
+    Height = 17
+    Top = 156
+    Width = 339
+    Caption = 'Перепад давления в регуляторах-промывателях'
+  end
+  object Label26: TLabel
+    Tag = 818
+    Left = 31
+    Height = 17
+    Top = 188
+    Width = 262
+    Caption = 'Величина выпрямленного тока 01-ПТ'
+  end
+  object Label27: TLabel
+    Tag = 819
+    Left = 31
+    Height = 17
+    Top = 220
+    Width = 262
+    Caption = 'Величина выпрямленного тока 02-ПТ'
+  end
+  object Label28: TLabel
+    Tag = 820
+    Left = 30
+    Height = 17
+    Top = 252
+    Width = 554
+    Caption = 'Нарушение изоляции между монополярной плитой и землей электролизера 1'
+  end
+  object Label29: TLabel
+    Tag = 821
+    Left = 31
+    Height = 17
+    Top = 284
+    Width = 554
+    Caption = 'Нарушение изоляции между монополярной плитой и землей электролизера 2'
+  end
+  object Label30: TLabel
+    Tag = 822
+    Left = 31
+    Height = 17
+    Top = 316
+    Width = 304
+    Caption = 'Температура электролита электролизера 1'
+  end
+  object Label31: TLabel
+    Tag = 825
+    Left = 30
+    Height = 17
+    Top = 412
+    Width = 304
+    Caption = 'Температура электролита электролизера 2'
+  end
+  object Label32: TLabel
+    Tag = 823
+    Left = 31
+    Height = 17
+    Top = 348
+    Width = 328
+    Caption = 'Температура водорода после электролизера 1'
+  end
+  object Label33: TLabel
+    Tag = 824
+    Left = 30
+    Height = 17
+    Top = 380
+    Width = 335
+    Caption = 'Температура кислорода после электролизера 1'
+  end
+  object Label34: TLabel
+    Tag = 826
+    Left = 31
+    Height = 17
+    Top = 444
+    Width = 328
+    Caption = 'Температура водорода после электролизера 2'
+  end
+  object Label35: TLabel
+    Tag = 827
+    Left = 30
+    Height = 17
+    Top = 476
+    Width = 335
+    Caption = 'Температура кислорода после электролизера 2'
+  end
+  object Label36: TLabel
+    Tag = 828
+    Left = 31
+    Height = 17
+    Top = 508
+    Width = 370
+    Caption = 'Содержание водорода в воздухе помещения канал 1'
+  end
+  object Label37: TLabel
+    Tag = 829
+    Left = 30
+    Height = 17
+    Top = 540
+    Width = 370
+    Caption = 'Содержание водорода в воздухе помещения канал 2'
+  end
+  object Label38: TLabel
+    Tag = 830
+    Left = 31
+    Height = 17
+    Top = 572
+    Width = 370
+    Caption = 'Содержание водорода в воздухе помещения канал 3'
+  end
+  object Label39: TLabel
+    Tag = 831
+    Left = 30
+    Height = 17
+    Top = 604
+    Width = 370
+    Caption = 'Содержание водорода в воздухе помещения канал 4'
+  end
+  object Label40: TLabel
+    Tag = 832
+    Left = 31
+    Height = 17
+    Top = 636
+    Width = 321
+    Caption = 'Содержание кислорода в воздухе помещения'
+  end
+  object Label41: TLabel
+    Tag = 833
+    Left = 31
+    Height = 17
+    Top = 668
+    Width = 317
+    Caption = 'Величина выпрямленного напряжения 01-ПТ'
+  end
+  object Label42: TLabel
+    Tag = 834
+    Left = 31
+    Height = 17
+    Top = 700
+    Width = 317
+    Caption = 'Величина выпрямленного напряжения 02-ПТ'
+  end
+  object Label1: TLabel
+    Tag = 101
+    Left = 1200
+    Height = 17
+    Top = 64
+    Width = 45
+    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Tag = 102
+    Left = 1200
+    Height = 17
+    Top = 96
+    Width = 45
+    Caption = 'Label2'
+  end
+  object Label3: TLabel
+    Tag = 103
+    Left = 1200
+    Height = 17
+    Top = 128
+    Width = 45
+    Caption = 'Label3'
+  end
+  object Label4: TLabel
+    Tag = 104
+    Left = 1200
+    Height = 17
+    Top = 160
+    Width = 45
+    Caption = 'Label4'
+  end
+  object Label5: TLabel
+    Tag = 105
+    Left = 1200
+    Height = 17
+    Top = 192
+    Width = 45
+    Caption = 'Label5'
+  end
+  object Label6: TLabel
+    Tag = 106
+    Left = 1200
+    Height = 17
+    Top = 224
+    Width = 45
+    Caption = 'Label6'
+  end
+  object Label7: TLabel
+    Tag = 107
+    Left = 1200
+    Height = 17
+    Top = 256
+    Width = 45
+    Caption = 'Label7'
+  end
+  object Label8: TLabel
+    Tag = 108
+    Left = 1200
+    Height = 17
+    Top = 288
+    Width = 45
+    Caption = 'Label8'
+  end
+  object Label9: TLabel
+    Tag = 109
+    Left = 1200
+    Height = 17
+    Top = 320
+    Width = 45
+    Caption = 'Label9'
+  end
+  object Label10: TLabel
+    Tag = 110
+    Left = 1200
+    Height = 17
+    Top = 352
+    Width = 53
+    Caption = 'Label10'
+  end
+  object Label11: TLabel
+    Tag = 111
+    Left = 1200
+    Height = 17
+    Top = 384
+    Width = 53
+    Caption = 'Label11'
+  end
+  object Label12: TLabel
+    Tag = 112
+    Left = 1200
+    Height = 17
+    Top = 416
+    Width = 53
+    Caption = 'Label12'
+  end
+  object Label13: TLabel
+    Tag = 113
+    Left = 1200
+    Height = 17
+    Top = 448
+    Width = 53
+    Caption = 'Label13'
+  end
+  object Label14: TLabel
+    Tag = 114
+    Left = 1200
+    Height = 17
+    Top = 480
+    Width = 53
+    Caption = 'Label14'
+  end
+  object Label15: TLabel
+    Tag = 115
+    Left = 1200
+    Height = 17
+    Top = 512
+    Width = 53
+    Caption = 'Label15'
+  end
+  object Label16: TLabel
+    Tag = 116
+    Left = 1200
+    Height = 17
+    Top = 544
+    Width = 53
+    Caption = 'Label16'
+  end
+  object Label17: TLabel
+    Tag = 117
+    Left = 1200
+    Height = 17
+    Top = 576
+    Width = 53
+    Caption = 'Label17'
+  end
+  object Label18: TLabel
+    Tag = 118
+    Left = 1200
+    Height = 17
+    Top = 608
+    Width = 53
+    Caption = 'Label18'
+  end
+  object Label19: TLabel
+    Tag = 119
+    Left = 1200
+    Height = 17
+    Top = 640
+    Width = 53
+    Caption = 'Label19'
+  end
+  object Label20: TLabel
+    Tag = 120
+    Left = 1200
+    Height = 17
+    Top = 672
+    Width = 53
+    Caption = 'Label20'
+  end
+  object Label21: TLabel
+    Tag = 121
+    Left = 1200
+    Height = 17
+    Top = 704
+    Width = 53
+    Caption = 'Label21'
+  end
+  object Label43: TLabel
+    Left = 606
+    Height = 17
+    Top = 60
+    Width = 28
+    Caption = '%     '
+  end
+  object Label45: TLabel
+    Left = 606
+    Height = 17
+    Top = 124
+    Width = 53
+    Caption = 'кгс/см2'
+  end
+  object Label46: TLabel
+    Left = 606
+    Height = 17
+    Top = 156
+    Width = 54
+    Caption = 'мм в.ст.'
+  end
+  object Label47: TLabel
+    Left = 606
+    Height = 17
+    Top = 188
+    Width = 25
+    Caption = 'А     '
+  end
+  object Label51: TLabel
+    Left = 606
+    Height = 17
+    Top = 316
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label62: TLabel
+    Left = 606
+    Height = 17
+    Top = 668
+    Width = 21
+    Caption = 'В    '
+  end
+  object Label63: TLabel
+    Left = 606
+    Height = 17
+    Top = 700
+    Width = 21
+    Caption = 'В    '
+  end
+  object Label44: TLabel
+    Left = 606
+    Height = 17
+    Top = 92
+    Width = 28
+    Caption = '%     '
+  end
+  object Label48: TLabel
+    Left = 606
+    Height = 17
+    Top = 220
+    Width = 25
+    Caption = 'А     '
+  end
+  object Label49: TLabel
+    Left = 606
+    Height = 17
+    Top = 252
+    Width = 24
+    Caption = 'B     '
+  end
+  object Label50: TLabel
+    Left = 606
+    Height = 17
+    Top = 284
+    Width = 24
+    Caption = 'B     '
+  end
+  object Label52: TLabel
+    Left = 606
+    Height = 17
+    Top = 348
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label53: TLabel
+    Left = 606
+    Height = 17
+    Top = 380
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label54: TLabel
+    Left = 606
+    Height = 17
+    Top = 412
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label55: TLabel
+    Left = 606
+    Height = 17
+    Top = 444
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label56: TLabel
+    Left = 606
+    Height = 17
+    Top = 476
+    Width = 28
+    Caption = '*С    '
+  end
+  object Label57: TLabel
+    Left = 606
+    Height = 17
+    Top = 508
+    Width = 28
+    Caption = '%     '
+  end
+  object Label58: TLabel
+    Left = 606
+    Height = 17
+    Top = 540
+    Width = 28
+    Caption = '%     '
+  end
+  object Label59: TLabel
+    Left = 606
+    Height = 17
+    Top = 572
+    Width = 28
+    Caption = '%     '
+  end
+  object Label60: TLabel
+    Left = 606
+    Height = 17
+    Top = 604
+    Width = 28
+    Caption = '%     '
+  end
+  object Label61: TLabel
+    Left = 606
+    Height = 17
+    Top = 636
+    Width = 28
+    Caption = '%     '
+  end
+  object Edit1: TEdit
+    Tag = 1001
+    Left = 664
+    Height = 34
+    Top = 52
+    Width = 152
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Tag = 1002
+    Left = 664
+    Height = 34
+    Top = 84
+    Width = 152
+    TabOrder = 1
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Tag = 1003
+    Left = 664
+    Height = 34
+    Top = 116
+    Width = 152
+    TabOrder = 2
+    Text = 'Edit3'
+    Visible = False
+  end
+  object Edit4: TEdit
+    Tag = 1004
+    Left = 664
+    Height = 34
+    Top = 148
+    Width = 152
+    TabOrder = 3
+    Text = 'Edit4'
+    Visible = False
+  end
+  object Edit5: TEdit
+    Tag = 1005
+    Left = 664
+    Height = 34
+    Top = 180
+    Width = 152
+    TabOrder = 4
+    Text = 'Edit5'
+    Visible = False
+  end
+  object Edit6: TEdit
+    Tag = 1006
+    Left = 664
+    Height = 34
+    Top = 212
+    Width = 152
+    TabOrder = 5
+    Text = 'Edit6'
+    Visible = False
+  end
+  object Edit7: TEdit
+    Tag = 1007
+    Left = 664
+    Height = 34
+    Top = 244
+    Width = 152
+    TabOrder = 6
+    Text = 'Edit7'
+    Visible = False
+  end
+  object Edit8: TEdit
+    Tag = 1008
+    Left = 664
+    Height = 34
+    Top = 276
+    Width = 152
+    TabOrder = 7
+    Text = 'Edit8'
+    Visible = False
+  end
+  object Edit9: TEdit
+    Tag = 1009
+    Left = 664
+    Height = 34
+    Top = 308
+    Width = 152
+    TabOrder = 8
+    Text = 'Edit9'
+    Visible = False
+  end
+  object Edit10: TEdit
+    Tag = 1010
+    Left = 664
+    Height = 34
+    Top = 340
+    Width = 152
+    TabOrder = 9
+    Text = 'Edit10'
+    Visible = False
+  end
+  object Edit11: TEdit
+    Tag = 1011
+    Left = 664
+    Height = 34
+    Top = 372
+    Width = 152
+    TabOrder = 10
+    Text = 'Edit11'
+    Visible = False
+  end
+  object Edit12: TEdit
+    Tag = 1012
+    Left = 664
+    Height = 34
+    Top = 404
+    Width = 152
+    TabOrder = 11
+    Text = 'Edit12'
+    Visible = False
+  end
+  object Edit13: TEdit
+    Tag = 1013
+    Left = 664
+    Height = 34
+    Top = 436
+    Width = 152
+    TabOrder = 12
+    Text = 'Edit13'
+    Visible = False
+  end
+  object Edit14: TEdit
+    Tag = 1014
+    Left = 664
+    Height = 34
+    Top = 468
+    Width = 152
+    TabOrder = 13
+    Text = 'Edit14'
+    Visible = False
+  end
+  object Edit15: TEdit
+    Tag = 1015
+    Left = 664
+    Height = 34
+    Top = 500
+    Width = 152
+    TabOrder = 14
+    Text = 'Edit15'
+    Visible = False
+  end
+  object Edit16: TEdit
+    Tag = 1016
+    Left = 664
+    Height = 34
+    Top = 532
+    Width = 152
+    TabOrder = 15
+    Text = 'Edit16'
+    Visible = False
+  end
+  object Edit17: TEdit
+    Tag = 1017
+    Left = 664
+    Height = 34
+    Top = 564
+    Width = 152
+    TabOrder = 16
+    Text = 'Edit17'
+    Visible = False
+  end
+  object Edit18: TEdit
+    Tag = 1018
+    Left = 664
+    Height = 34
+    Top = 596
+    Width = 152
+    TabOrder = 17
+    Text = 'Edit18'
+    Visible = False
+  end
+  object Edit19: TEdit
+    Tag = 1019
+    Left = 664
+    Height = 34
+    Top = 628
+    Width = 152
+    TabOrder = 18
+    Text = 'Edit19'
+  end
+  object Edit20: TEdit
+    Tag = 1020
+    Left = 664
+    Height = 34
+    Top = 660
+    Width = 152
+    TabOrder = 19
+    Text = 'Edit20'
+  end
+  object Edit21: TEdit
+    Tag = 1021
+    Left = 664
+    Height = 34
+    Top = 692
+    Width = 152
+    TabOrder = 20
+    Text = 'Edit21'
+  end
+  object Edit22: TEdit
+    Tag = 2001
+    Left = 824
+    Height = 34
+    Top = 52
+    Width = 152
+    TabOrder = 21
+    Text = 'Edit22'
+  end
+  object Edit23: TEdit
+    Tag = 2002
+    Left = 824
+    Height = 34
+    Top = 84
+    Width = 152
+    TabOrder = 22
+    Text = 'Edit23'
+  end
+  object Edit24: TEdit
+    Tag = 2003
+    Left = 824
+    Height = 34
+    Top = 116
+    Width = 152
+    TabOrder = 23
+    Text = 'Edit24'
+    Visible = False
+  end
+  object Edit25: TEdit
+    Tag = 2004
+    Left = 824
+    Height = 34
+    Top = 148
+    Width = 152
+    TabOrder = 24
+    Text = 'Edit25'
+    Visible = False
+  end
+  object Edit26: TEdit
+    Tag = 2005
+    Left = 824
+    Height = 34
+    Top = 180
+    Width = 152
+    TabOrder = 25
+    Text = 'Edit26'
+    Visible = False
+  end
+  object Edit27: TEdit
+    Tag = 2006
+    Left = 824
+    Height = 34
+    Top = 212
+    Width = 152
+    TabOrder = 26
+    Text = 'Edit27'
+    Visible = False
+  end
+  object Edit28: TEdit
+    Tag = 2007
+    Left = 824
+    Height = 34
+    Top = 244
+    Width = 152
+    TabOrder = 27
+    Text = 'Edit28'
+  end
+  object Edit29: TEdit
+    Tag = 2008
+    Left = 824
+    Height = 34
+    Top = 276
+    Width = 152
+    TabOrder = 28
+    Text = 'Edit29'
+  end
+  object Edit30: TEdit
+    Tag = 2009
+    Left = 824
+    Height = 34
+    Top = 308
+    Width = 152
+    TabOrder = 29
+    Text = 'Edit30'
+  end
+  object Edit31: TEdit
+    Tag = 2010
+    Left = 824
+    Height = 34
+    Top = 340
+    Width = 152
+    TabOrder = 30
+    Text = 'Edit31'
+  end
+  object Edit32: TEdit
+    Tag = 2011
+    Left = 824
+    Height = 34
+    Top = 372
+    Width = 152
+    TabOrder = 31
+    Text = 'Edit32'
+  end
+  object Edit33: TEdit
+    Tag = 2012
+    Left = 824
+    Height = 34
+    Top = 404
+    Width = 152
+    TabOrder = 32
+    Text = 'Edit33'
+  end
+  object Edit34: TEdit
+    Tag = 2013
+    Left = 824
+    Height = 34
+    Top = 436
+    Width = 152
+    TabOrder = 33
+    Text = 'Edit34'
+  end
+  object Edit35: TEdit
+    Tag = 2014
+    Left = 824
+    Height = 34
+    Top = 468
+    Width = 152
+    TabOrder = 34
+    Text = 'Edit35'
+  end
+  object Edit36: TEdit
+    Tag = 2015
+    Left = 824
+    Height = 34
+    Top = 500
+    Width = 152
+    TabOrder = 35
+    Text = 'Edit36'
+  end
+  object Edit37: TEdit
+    Tag = 2016
+    Left = 824
+    Height = 34
+    Top = 532
+    Width = 152
+    TabOrder = 36
+    Text = 'Edit37'
+  end
+  object Edit38: TEdit
+    Tag = 2017
+    Left = 824
+    Height = 34
+    Top = 564
+    Width = 152
+    TabOrder = 37
+    Text = 'Edit38'
+  end
+  object Edit39: TEdit
+    Tag = 2018
+    Left = 824
+    Height = 34
+    Top = 596
+    Width = 152
+    TabOrder = 38
+    Text = 'Edit39'
+  end
+  object Edit40: TEdit
+    Tag = 2019
+    Left = 824
+    Height = 34
+    Top = 628
+    Width = 152
+    TabOrder = 39
+    Text = 'Edit40'
+  end
+  object Edit41: TEdit
+    Tag = 2020
+    Left = 824
+    Height = 34
+    Top = 660
+    Width = 152
+    TabOrder = 40
+    Text = 'Edit41'
+    Visible = False
+  end
+  object Edit42: TEdit
+    Tag = 2021
+    Left = 824
+    Height = 34
+    Top = 692
+    Width = 152
+    TabOrder = 41
+    Text = 'Edit42'
+    Visible = False
+  end
+  object Edit43: TEdit
+    Tag = 3001
+    Left = 984
+    Height = 34
+    Top = 52
+    Width = 152
+    TabOrder = 42
+    Text = 'Edit43'
+  end
+  object Edit44: TEdit
+    Tag = 3002
+    Left = 984
+    Height = 34
+    Top = 84
+    Width = 152
+    TabOrder = 43
+    Text = 'Edit44'
+  end
+  object Edit45: TEdit
+    Tag = 3003
+    Left = 984
+    Height = 34
+    Top = 116
+    Width = 152
+    TabOrder = 44
+    Text = 'Edit45'
+  end
+  object Edit46: TEdit
+    Tag = 3004
+    Left = 984
+    Height = 34
+    Top = 148
+    Width = 152
+    TabOrder = 45
+    Text = 'Edit46'
+  end
+  object Edit47: TEdit
+    Tag = 3005
+    Left = 984
+    Height = 34
+    Top = 180
+    Width = 152
+    TabOrder = 46
+    Text = 'Edit47'
+    Visible = False
+  end
+  object Edit48: TEdit
+    Tag = 3006
+    Left = 984
+    Height = 34
+    Top = 212
+    Width = 152
+    TabOrder = 47
+    Text = 'Edit48'
+    Visible = False
+  end
+  object Edit49: TEdit
+    Tag = 3007
+    Left = 984
+    Height = 34
+    Top = 244
+    Width = 152
+    TabOrder = 48
+    Text = 'Edit49'
+    Visible = False
+  end
+  object Edit50: TEdit
+    Tag = 3008
+    Left = 984
+    Height = 34
+    Top = 276
+    Width = 152
+    TabOrder = 49
+    Text = 'Edit50'
+    Visible = False
+  end
+  object Edit51: TEdit
+    Tag = 3009
+    Left = 984
+    Height = 34
+    Top = 308
+    Width = 152
+    TabOrder = 50
+    Text = 'Edit51'
+    Visible = False
+  end
+  object Edit52: TEdit
+    Tag = 3010
+    Left = 984
+    Height = 34
+    Top = 340
+    Width = 152
+    TabOrder = 51
+    Text = 'Edit52'
+    Visible = False
+  end
+  object Edit53: TEdit
+    Tag = 3011
+    Left = 984
+    Height = 34
+    Top = 372
+    Width = 152
+    TabOrder = 52
+    Text = 'Edit53'
+    Visible = False
+  end
+  object Edit54: TEdit
+    Tag = 3012
+    Left = 984
+    Height = 34
+    Top = 404
+    Width = 152
+    TabOrder = 53
+    Text = 'Edit54'
+    Visible = False
+  end
+  object Edit55: TEdit
+    Tag = 3013
+    Left = 984
+    Height = 34
+    Top = 436
+    Width = 152
+    TabOrder = 54
+    Text = 'Edit55'
+    Visible = False
+  end
+  object Edit56: TEdit
+    Tag = 3014
+    Left = 984
+    Height = 34
+    Top = 468
+    Width = 152
+    TabOrder = 55
+    Text = 'Edit56'
+    Visible = False
+  end
+  object Edit57: TEdit
+    Tag = 3015
+    Left = 984
+    Height = 34
+    Top = 500
+    Width = 152
+    TabOrder = 56
+    Text = 'Edit57'
+  end
+  object Edit58: TEdit
+    Tag = 3016
+    Left = 984
+    Height = 34
+    Top = 532
+    Width = 152
+    TabOrder = 57
+    Text = 'Edit58'
+  end
+  object Edit59: TEdit
+    Tag = 3017
+    Left = 984
+    Height = 34
+    Top = 564
+    Width = 152
+    TabOrder = 58
+    Text = 'Edit59'
+  end
+  object Edit60: TEdit
+    Tag = 3018
+    Left = 984
+    Height = 34
+    Top = 596
+    Width = 152
+    TabOrder = 59
+    Text = 'Edit60'
+  end
+  object Edit61: TEdit
+    Tag = 3019
+    Left = 984
+    Height = 34
+    Top = 628
+    Width = 152
+    TabOrder = 60
+    Text = 'Edit61'
+  end
+  object Edit62: TEdit
+    Tag = 3020
+    Left = 984
+    Height = 34
+    Top = 660
+    Width = 152
+    TabOrder = 61
+    Text = 'Edit62'
+    Visible = False
+  end
+  object Edit63: TEdit
+    Tag = 3021
+    Left = 984
+    Height = 34
+    Top = 692
+    Width = 152
+    TabOrder = 62
+    Text = 'Edit63'
+    Visible = False
+  end
+  object Button2: TButton
+    Left = 696
+    Height = 49
+    Top = 774
+    Width = 200
+    Caption = 'Выход'
+    TabOrder = 63
+    OnClick = Button2Click
+  end
+  object Label64: TLabel
+    Left = 672
+    Height = 17
+    Top = 16
+    Width = 57
+    Caption = 'Нижний'
+  end
+  object Label65: TLabel
+    Left = 824
+    Height = 17
+    Top = 16
+    Width = 59
+    Caption = 'Верхний'
+  end
+  object Label66: TLabel
+    Left = 984
+    Height = 17
+    Top = 16
+    Width = 59
+    Caption = 'Верхний'
+  end
+  object Label67: TLabel
+    Left = 672
+    Height = 17
+    Top = 32
+    Width = 122
+    Caption = 'предупр. уровень'
+  end
+  object Label68: TLabel
+    Left = 824
+    Height = 17
+    Top = 32
+    Width = 122
+    Caption = 'предупр. уровень'
+  end
+  object Label69: TLabel
+    Left = 984
+    Height = 17
+    Top = 32
+    Width = 141
+    Caption = 'аварийный уровень'
+  end
+  object btRead: TButton
+    Left = 400
+    Height = 49
+    Top = 776
+    Width = 192
+    Caption = 'Cчитать все'
+    TabOrder = 64
+    OnClick = btReadClick
+  end
+  object m: TMemo
+    Left = 967
+    Height = 109
+    Top = 747
+    Width = 289
+    Lines.Strings = (
+      'm'
+    )
+    TabOrder = 65
+    Visible = False
+  end
+  object btWrite: TSpeedButton
+    Left = 120
+    Height = 49
+    Top = 776
+    Width = 199
+    Caption = 'Записать'
+    Font.Style = [fsBold]
+    OnClick = btWriteClick
+    ParentFont = False
+  end
+end
